@@ -18,7 +18,7 @@ A command-line game where you explore a simulated Linux filesystem and solve hac
 
 ```bash
 # Navigate to project directory
-cd mike
+cd WindowCTF
 
 # Install dependencies (requires Python 3.7+)
 pip install -r requirements.txt
@@ -74,3 +74,4 @@ MIT License - Feel free to use, modify, and distribute!
 
 For detailed information, see [QUICKSTART.md](QUICKSTART.md) and the [development guide](.github/copilot-instructions.md).
 # FileSystem-CTF
+
