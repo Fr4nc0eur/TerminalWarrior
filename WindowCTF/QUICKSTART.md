@@ -6,7 +6,7 @@
 
 ```powershell
 # Navigate to project directory
-cd path\to\mike
+cd path\to\WindowCTF
 
 # Install dependencies (virtual environment already created)
 .\.venv\Scripts\Activate
@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ### macOS/Linux
 
 ```bash
-cd path/to/mike
+cd path/to/WindowCTF
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -201,3 +201,4 @@ python -m pytest tests/test_filesystem.py -v
 ## License
 
 MIT - Feel free to modify and distribute!
+
