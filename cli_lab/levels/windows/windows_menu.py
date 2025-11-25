@@ -25,7 +25,7 @@ def main_menu():
                  if level2_permissions.run_level(): 
                     if level3_searching.run_level(): 
                         if level4_networking.run_level():
-                            if level5_cryptography.run_level()
+                            if level5_cryptography.run_level():
                                 clear_screen()
                                 print("\n\n")
                                 print("*" * 50)
@@ -35,8 +35,9 @@ def main_menu():
             return 
         elif choice == "2":
             print("System Disconnected.")
-            sys.exit(0
+            sys.exit(0)
                      
 if __name__ == "__main__":
     main_menu()                     
+
 
