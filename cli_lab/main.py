@@ -7,22 +7,14 @@ if __name__ == "__main__" and __package__ is None:
     if repo_root not in sys.path:
         sys.path.insert(0, repo_root)
 
+from cli_lab.levels.linux import level1_linux_intro as linux_level1, level2_linux_permissions as linux_level2, level3_linux_searching as linux_level3, level4_linux_networking as linux_level4
+from cli_lab.levels.windows import level1_windows_recon as win_level1, level2_windows_permissions as win_level2, level3_windows_searching as win_level3, level4_windows_networking as win_level4, level5_windows_cryptography as win_level5, level6_windows_registry as win_level6, level7_windows_tasks_services as win_level7, level8_Windows_event_logs as win_level8, level9_windows_disk_forensics as win_level9
 from cli_lab.levels.linux import (
-    level1_intro,
-    level2_permissions as linux_level2,
+    level5_linux_cryptography as linux_level5,
 )
 
 from cli_lab.levels.windows import (
-    level1_recon,
-    level2_permissions as win_level2,
-    level3_searching,
-    level4_networking,
-    level5_cryptography,
-    level6_registry,
-    level7_tasks_services,
-    level8_event_logs,
-    level9_disk_forensics,
-    level10_powershell,
+    level10_windows_powershell as win_level10,
 )
 
 
@@ -51,23 +43,23 @@ def linux_menu():
         print("\n=== Linux Levels ===")
         print("1) Level 1 - Intro Challenge")
         print("2) Level 2 - Permissions")
-        print("3) Level 3 - COMING SOON")
-        print("4) Level 4 - COMING SOON")
-        print("5) Level 5 - COMING SOON")
+        print("3) Level 3 - Searching the System")
+        print("4) Level 4 - Networking")
+        print("5) Level 5 - Cryptography & Decoding")
         print("0) Back\n")
 
         choice = input("Select a level: ").strip()
 
         if choice == "1":
-            level1_intro.main()
+            linux_level1.main()
         elif choice == "2":
             linux_level2.main()
         elif choice == "3":
-            print("COMING SOON!")
+            linux_level3.main()
         elif choice == "4":
-            print("COMING SOON!")
+            linux_level4.main()
         elif choice == "5":
-            print("COMING SOON!")
+            linux_level5.main()
         elif choice == "0":
             return
         else:
@@ -92,25 +84,25 @@ def windows_menu():
         choice = input("Select a level: ").strip()
 
         if choice == "1":
-            level1_recon.run_level()
+            win_level1.run_level()
         elif choice == "2":
             win_level2.run_level()
         elif choice == "3":
-            level3_searching.run_level()
+            win_level3.run_level()
         elif choice == "4":
-            level4_networking.run_level()
+            win_level4.run_level()
         elif choice == "5":
-            level5_cryptography.run_level()
+            win_level5.run_level()
         elif choice == "6":
-            level6_registry.run_level()
+            win_level6.run_level()
         elif choice == "7":
-            level7_tasks_services.run_level()
+            win_level7.run_level()
         elif choice == "8":
-            level8_event_logs.run_level()
+            win_level8.run_level()
         elif choice == "9":
-            level9_disk_forensics.run_level()
+            win_level9.run_level()
         elif choice == "10":
-            level10_powershell.run_level()
+            win_level10.run_level()
         elif choice == "0":
             return
         else:
@@ -119,6 +111,3 @@ def windows_menu():
 
 if __name__ == "__main__":
     main()
-  
-  
-

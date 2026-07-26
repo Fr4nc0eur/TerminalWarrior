@@ -20,10 +20,10 @@ A containersized command-line cybersecurity challenge built in Python, simulatin
 ---
 ### 🐧 Linux Terminal Levels:
 1. **Intro Challenge**: Explore directories and find hidden files | Basic Linux commands `ls`, `cat`, `cd`, `pwd`, `whoami`
-2. **Permissions & Ownership**: `UNDER REDESIGN`Learn how to view and modify file permissions | `chmod`, `chown`, `sudo`, `file modes`
-3. **Searching the system**: `UNDER REDESIGN`Find hidden files and analyze logs | `grep`, `find`, `less`, `head`, `tail`
-4. **Networking Challenge**: `COMING July` Discover hosts and services | `ping`, `netcat`, `curl`, `ssh`
-5. **Cryptography & Decoding**: `COMING August` Decode hidden messages and hash files | `base64`, `hashing`, `simple ciphers`
+2. **Permissions & Ownership**: Learn how to view and modify file permissions | `chmod`, `chown`, `sudo`, `su`
+3. **Searching the system**: Find hidden files and analyze logs | `grep`, `find`, `locate`, `which` `whereis`
+4. **Networking Challenge**: Discover hosts and services | `ping`, `netcat`, `traceroute`, `nmap`
+5. **Cryptography & Decoding**: Decode hidden messages and hash files | `base64`, `hashing`, `simple ciphers`
 
 ### 🪟 Windows Terminal Levels:
 1. **Intro challenge**: Navigate folders and uncover hidden files | Basic Window commands `dir`, `cd`, `type`, `cls`, `echo`
@@ -40,7 +40,7 @@ A containersized command-line cybersecurity challenge built in Python, simulatin
 
 ----
 
-### 🐧 Run Locally for Linux (Without Docker)
+### 🐧 Run Locally for Linux
 
 
 #### Step 1: Clone the repo
@@ -60,7 +60,7 @@ pip install -r requirements.txt
 python -m cli_lab.main
 ```
 
-### 🪟 Run Locally for Windows (Without Docker)
+### 🪟 Run Locally for Windows
 
 #### Step 1: Clone the repo
 ```bash
@@ -79,7 +79,7 @@ pip install -r requirements.txt
 python -m cli_lab.main
 ```
 
-### 🐳 Run With Docker (Recommended)
+### 🐳 Run With Docker
 
 #### Step 1: Build Docker image
 ```bash
