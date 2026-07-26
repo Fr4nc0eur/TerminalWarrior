@@ -78,14 +78,3 @@ pip install -r requirements.txt
 ```bash
 python -m cli_lab.main
 ```
-
-### 🐳 Run With Docker
-
-#### Step 1: Build Docker image
-```bash
- docker build -t cli-lab -f docker/Dockerfile .
-```
-#### Step 2: Run the containter interactively
-```bash
- docker run -it cli-lab
-```
